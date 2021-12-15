@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/DELL/AndroidStudioProjects/POSTRequest/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/DELL/AndroidStudioProjects/POSTRequest/app/src/main/res/layout/item_row.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/POSTRequest/app/src/main/res/layout/activity_add_user.xml" value="0.176" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/POSTRequest/app/src/main/res/layout/activity_main.xml" value="0.136" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/POSTRequest/app/src/main/res/layout/activity_update_and_delete.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/POSTRequest/app/src/main/res/layout/item_row.xml" value="0.1" />
       </map>
     </option>
   </component>
@@ -17,7 +19,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.176" />
+        <option name="scale" value="0.2" />
       </ProjectState>
     </option>
   </component>

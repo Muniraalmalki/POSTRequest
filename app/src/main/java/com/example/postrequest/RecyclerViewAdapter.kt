@@ -18,8 +18,9 @@ class RecyclerViewAdapter(private var userList: List<UserItem>):
     override fun onBindViewHolder(holder: HolderView, position: Int) {
         val user = userList[position]
         holder.binding.apply {
-            tvName.text = user.name
-            tvLocation.text = user.location
+            tvName.text = "Name:${user.name}"
+            tvLocation.text = "Location:${ user.location }"
+            tvId.text = "ID:${user.pk}"
         }
     }
 
