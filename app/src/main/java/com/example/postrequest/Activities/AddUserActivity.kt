@@ -1,4 +1,4 @@
-package com.example.postrequest
+package com.example.postrequest.Activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +8,8 @@ import android.widget.EditText
 import android.widget.Toast
 import com.example.postrequest.API.APIClient
 import com.example.postrequest.API.APIInterface
+import com.example.postrequest.R
+import com.example.postrequest.Model.UserItem
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

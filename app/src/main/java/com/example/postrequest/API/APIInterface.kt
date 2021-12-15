@@ -1,7 +1,7 @@
 package com.example.postrequest.API
 
-import com.example.postrequest.User
-import com.example.postrequest.UserItem
+import com.example.postrequest.Model.User
+import com.example.postrequest.Model.UserItem
 import retrofit2.Call
 import retrofit2.http.*
 

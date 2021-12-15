@@ -1,8 +1,9 @@
-package com.example.postrequest
+package com.example.postrequest.Adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.postrequest.Model.UserItem
 import com.example.postrequest.databinding.ItemRowBinding
 
 class RecyclerViewAdapter(private var userList: List<UserItem>):

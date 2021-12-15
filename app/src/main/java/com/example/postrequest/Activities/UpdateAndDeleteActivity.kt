@@ -1,4 +1,4 @@
-package com.example.postrequest
+package com.example.postrequest.Activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +8,8 @@ import android.widget.EditText
 import android.widget.Toast
 import com.example.postrequest.API.APIClient
 import com.example.postrequest.API.APIInterface
+import com.example.postrequest.R
+import com.example.postrequest.Model.UserItem
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -38,7 +40,7 @@ class UpdateAndDeleteActivity : AppCompatActivity() {
             apiClient?.updateUser(pk, UserItem(name, location,pk ))?.enqueue(object :Callback<UserItem>{
                 override fun onResponse(call: Call<UserItem>, response: Response<UserItem>) {
                     Toast.makeText(this@UpdateAndDeleteActivity,"User Updated Successfully", Toast.LENGTH_LONG).show()
-                    val intent = Intent(this@UpdateAndDeleteActivity,MainActivity::class.java)
+                    val intent = Intent(this@UpdateAndDeleteActivity, MainActivity::class.java)
                     startActivity(intent)
                 }
 
@@ -50,7 +52,7 @@ class UpdateAndDeleteActivity : AppCompatActivity() {
 
         }
         deleteButton.setOnClickListener {
-            val intent = Intent(this@UpdateAndDeleteActivity,MainActivity::class.java)
+            val intent = Intent(this@UpdateAndDeleteActivity, MainActivity::class.java)
             startActivity(intent)
         }
         deleteButton.setOnClickListener {
@@ -66,7 +68,7 @@ class UpdateAndDeleteActivity : AppCompatActivity() {
         apiClient!!.deleteUser(pk).enqueue(object :Callback<Void>{
             override fun onResponse(call: Call<Void>, response: Response<Void>) {
                 Toast.makeText(this@UpdateAndDeleteActivity,"User Deleted Successfully",Toast.LENGTH_LONG).show()
-                val intent = Intent(this@UpdateAndDeleteActivity,MainActivity::class.java)
+                val intent = Intent(this@UpdateAndDeleteActivity, MainActivity::class.java)
                 startActivity(intent)
             }
 

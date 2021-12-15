@@ -1,4 +1,4 @@
-package com.example.postrequest
+package com.example.postrequest.Model
 
 data class UserItem(
     val name: String,

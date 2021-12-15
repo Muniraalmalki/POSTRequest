@@ -1,15 +1,18 @@
-package com.example.postrequest
+package com.example.postrequest.Activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.EditText
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.postrequest.*
 import com.example.postrequest.API.APIClient
 import com.example.postrequest.API.APIInterface
+import com.example.postrequest.Adapter.RecyclerViewAdapter
+import com.example.postrequest.Model.User
+import com.example.postrequest.Model.UserItem
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -46,13 +49,13 @@ class MainActivity : AppCompatActivity() {
 //            val location = etLocation.text.toString()
 //            addUser(name,location,0)
            // getUser()
-            val intent = Intent(this,AddUserActivity::class.java)
+            val intent = Intent(this, AddUserActivity::class.java)
             startActivity(intent)
         }
 
         updateDeleteButton = findViewById(R.id.updateDeleteButton)
         updateDeleteButton.setOnClickListener {
-            val intent = Intent(this,UpdateAndDeleteActivity::class.java)
+            val intent = Intent(this, UpdateAndDeleteActivity::class.java)
             startActivity(intent)
         }
     }
